@@ -1,0 +1,178 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000013",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000014",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000015",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000016",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000017",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.23",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/bob",
+        "accountId": "111111111111",
+        "userName": "bob"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000018",
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    }
+  ]
+}

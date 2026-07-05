@@ -1,0 +1,51 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.47",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/alice",
+        "accountId": "111111111111",
+        "userName": "alice",
+        "accessKeyId": "AKIAEXAMPLE00000001"
+      },
+      "requestParameters": {
+        "groupId": "sg-0abcd1234efgh5678",
+        "ipPermissions": {
+          "items": [
+            {
+              "ipProtocol": "tcp",
+              "fromPort": 22,
+              "toPort": 22,
+              "ipRanges": {
+                "items": [
+                  {
+                    "cidrIp": "0.0.0.0/0"
+                  }
+                ]
+              },
+              "ipv6Ranges": {}
+            }
+          ]
+        }
+      },
+      "responseElements": {
+        "requestId": "r-1",
+        "_return": true
+      },
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000001"
+    }
+  ]
+}

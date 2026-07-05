@@ -1,0 +1,32 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "kms.amazonaws.com",
+      "eventName": "ScheduleKeyDeletion",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.47",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE0000000001",
+        "arn": "arn:aws:iam::111111111111:user/alice",
+        "accountId": "111111111111",
+        "userName": "alice",
+        "accessKeyId": "AKIAEXAMPLE00000001"
+      },
+      "requestParameters": {
+        "keyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "pendingWindowInDays": 7
+      },
+      "responseElements": null,
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000009"
+    }
+  ]
+}

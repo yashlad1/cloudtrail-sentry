@@ -1,0 +1,56 @@
+{
+  "tool": "cloudtrail-sentry",
+  "version": "0.1.0",
+  "summary": {
+    "events_scanned": 12,
+    "findings": 3,
+    "by_severity": {
+      "CRITICAL": 1,
+      "HIGH": 2
+    }
+  },
+  "findings": [
+    {
+      "rule": "CLOUDTRAIL_LOGGING_DISABLED",
+      "severity": "CRITICAL",
+      "resource": "org-trail",
+      "remediation": "Restart logging (aws cloudtrail start-logging --name <trail>), restore the trail configuration, and investigate the principal responsible. Treat as defense evasion.",
+      "title": "CloudTrail logging disabled or deleted",
+      "description": "CloudTrail trail org-trail was stopped.",
+      "account_id": "111111111111",
+      "region": "us-east-1",
+      "event_name": "StopLogging",
+      "event_time": "2026-06-30T14:22:31Z",
+      "source_ip": "203.0.113.47",
+      "actor": "arn:aws:iam::111111111111:user/alice"
+    },
+    {
+      "rule": "IAM_ACCESS_KEY_CREATED",
+      "severity": "HIGH",
+      "resource": "alice:AKIAEXAMPLE00000003",
+      "remediation": "Confirm the key was expected. If not, deactivate and delete it (aws iam update-access-key --status Inactive; aws iam delete-access-key) and rotate the user's credentials.",
+      "title": "IAM access key created",
+      "description": "Long-lived access key created for alice.",
+      "account_id": "111111111111",
+      "region": "us-east-1",
+      "event_name": "CreateAccessKey",
+      "event_time": "2026-06-30T14:22:31Z",
+      "source_ip": "203.0.113.47",
+      "actor": "arn:aws:iam::111111111111:user/alice"
+    },
+    {
+      "rule": "SECURITY_GROUP_OPEN_TO_INTERNET",
+      "severity": "HIGH",
+      "resource": "sg-0abcd1234efgh5678",
+      "remediation": "Restrict the ingress rule to a specific trusted CIDR instead of 0.0.0.0/0 or ::/0; prefer SSM Session Manager or a bastion host for administrative access.",
+      "title": "Security group ingress opened to the internet",
+      "description": "SSH (22) exposed to 0.0.0.0/0.",
+      "account_id": "111111111111",
+      "region": "us-east-1",
+      "event_name": "AuthorizeSecurityGroupIngress",
+      "event_time": "2026-06-30T14:22:31Z",
+      "source_ip": "203.0.113.47",
+      "actor": "arn:aws:iam::111111111111:user/alice"
+    }
+  ]
+}

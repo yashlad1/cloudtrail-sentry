@@ -1,0 +1,59 @@
+# Byte-compiled / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / type / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Secrets & real cloud data — MUST NEVER be committed.
+# This tool reads only local, synthetic fixtures. Real logs/credentials stay
+# out of the repo entirely.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+credentials
+.aws/
+aws_credentials
+*.tfstate
+*.tfstate.*
+
+# Real CloudTrail logs (only synthetic fixtures/examples belong in the repo)
+*.log
+real-logs/
+scratch/
+private/
+
+# AWS demo tooling - versioned only on the local-only `local-demo` branch, never
+# published. Everything under demo/ is ignored on main (force-added on local-demo).
+demo/
+
+# Local-only project notes — not published to GitHub
+CLAUDE.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

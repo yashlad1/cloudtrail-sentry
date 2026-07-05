@@ -1,0 +1,33 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.47",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "SAMLUser",
+        "principalId": "SAMLPROVIDER:carol",
+        "userName": "carol",
+        "accountId": "111111111111"
+      },
+      "requestParameters": null,
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "readOnly": false,
+      "eventType": "AwsConsoleSignIn",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000028",
+      "additionalEventData": {
+        "MFAUsed": "No",
+        "SamlProviderArn": "arn:aws:iam::111111111111:saml-provider/Okta"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "eventTime": "2026-06-30T14:22:31Z",
+      "eventSource": "guardduty.amazonaws.com",
+      "eventName": "UpdateDetector",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.47",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE0000000099:config",
+        "arn": "arn:aws:sts::111111111111:assumed-role/AWSServiceRoleForConfig/config",
+        "accountId": "111111111111",
+        "invokedBy": "config.amazonaws.com",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "arn": "arn:aws:iam::111111111111:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+            "userName": "AWSServiceRoleForConfig",
+            "accountId": "111111111111"
+          }
+        }
+      },
+      "requestParameters": {
+        "detectorId": "12abc34d567e8fa901bc2d34e56789f0",
+        "enable": true
+      },
+      "responseElements": null,
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "eventCategory": "Management",
+      "recipientAccountId": "111111111111",
+      "eventID": "e1a2c3d4-0000-0000-0000-000000000032"
+    }
+  ]
+}
