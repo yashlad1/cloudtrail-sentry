@@ -92,6 +92,25 @@ $ cts scan examples/sample_cloudtrail.json --format json
 > The full report (with the two HIGH findings) is checked in at
 > [tests/fixtures/golden/sample_findings.json](tests/fixtures/golden/sample_findings.json).
 
+## Verified against real AWS
+
+Beyond the synthetic fixtures, `cloudtrail-sentry` has been run end-to-end against
+**live CloudTrail logs from a real AWS account** — pulled read-only via
+`aws cloudtrail lookup-events` (no changes to the tool, no stored credentials). A few
+low-risk events were generated in a sandbox and the scanner flagged them exactly as
+designed:
+
+```text
+Scanned 50 event(s) — 3 finding(s): 1 CRITICAL, 1 HIGH, 1 MEDIUM.
+
+CRITICAL  IAM_ACCESS_KEY_CREATED           <user>:<access-key-id>   access key created for a different user
+HIGH      SECURITY_GROUP_OPEN_TO_INTERNET  sg-xxxxxxxxxxxxxxxxx     SSH (22) exposed to 0.0.0.0/0
+MEDIUM    IAM_USER_CREATED                 <iam-user>               new IAM user created
+```
+
+Account IDs, ARNs, IPs, and resource identifiers are redacted above — the tool reads
+only local files and makes no AWS API calls.
+
 ## Usage
 
 ```
